@@ -2,8 +2,16 @@ vendor
 wp
 wp-config.php
 
+wp-content/*
+
 wp-content/themes/*
 !wp-content/themes/hello-elementor-child
 
 wp-content/plugins/*
-!wp-content/plugins/elements-custom-for-elementor
+!wp-content/plugins/cz-elements
+
+wp-content/languages/*
+
+wp-content/upgrade/*
+
+wp-content/uploads/*
