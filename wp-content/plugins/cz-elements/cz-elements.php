@@ -9,6 +9,11 @@
  * Text Domain: cz-elements-extension
  */
 
+ namespace czElements;
+
+ use czElements\Widgets\CardTest;
+ use Elementor\Test_Control;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -200,10 +205,10 @@ final class Elements_Extension {
 	public function init_widgets() {
 
 		// Include Widget files
-		require_once( __DIR__ . '/widgets/test-widget.php' );
+		require_once( __DIR__ . '/widgets/card-test.php' );
 
 		// Register widget
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Test_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_cardtest_Widget() );
 
 	}
 
