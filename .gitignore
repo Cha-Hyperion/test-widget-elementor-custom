@@ -11,7 +11,5 @@ wp-content/plugins/*
 !wp-content/plugins/cz-elements
 
 wp-content/languages/*
-
 wp-content/upgrade/*
-
 wp-content/uploads/*
