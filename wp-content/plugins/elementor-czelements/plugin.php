@@ -1,5 +1,5 @@
 <?php
-namespace ElementorZendawesome;
+namespace ElementorCzelements;
  
 /**
  * Class Plugin
@@ -48,8 +48,8 @@ class Plugin {
    * @access public
    */
   public function widget_scripts() {
-    wp_register_script( 'elementor-zendawesome', plugins_url( '/assets/js/zendawesome.js', __FILE__ ), [ 'jquery' ], false, true );
-    wp_enqueue_style( 'zendawesome.css', plugins_url( '/assets/css/zendawesome.css', __FILE__ ));
+    wp_register_script( 'elementor-czelements', plugins_url( '/assets/js/script.js', __FILE__ ), [ 'jquery' ], false, true );
+    wp_enqueue_style( 'style.css', plugins_url( '/assets/css/style.css', __FILE__ ));
   }
  
   /**
@@ -61,7 +61,7 @@ class Plugin {
    * @access private
    */
   private function include_widgets_files() {
-    require_once( __DIR__ . '/widgets/zendawesome.php' );
+    require_once( __DIR__ . '/widgets/card.php' );
   }
  
   /**
@@ -77,7 +77,7 @@ class Plugin {
     $this->include_widgets_files();
  
     // Register Widgets
-    \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Zendawesome() );
+    \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Card() );
   }
  
   /**

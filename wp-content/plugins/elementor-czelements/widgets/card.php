@@ -1,5 +1,5 @@
 <?php
-namespace ElementorZendawesome\Widgets;
+namespace ElementorCzelements\Widgets;
  
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * @since 1.1.0
  * File : widgets/zendawesome.php
  */
-class Zendawesome extends Widget_Base {
+class Card extends Widget_Base {
  
   /**
    * Retrieve the widget name.
@@ -22,7 +22,7 @@ class Zendawesome extends Widget_Base {
    * @return string Widget name.
    */
   public function get_name() {
-    return 'zendawesome';
+    return 'card';
   }
  
   /**
@@ -35,7 +35,7 @@ class Zendawesome extends Widget_Base {
    * @return string Widget title.
    */
   public function get_title() {
-    return __( 'Zendawesome', 'elementor-zendawesome' );
+    return __( 'Card', 'elementor-czelements' );
   }
  
   /**
@@ -48,7 +48,7 @@ class Zendawesome extends Widget_Base {
    * @return string Widget icon.
    */
   public function get_icon() {
-    return 'fa fa-pencil';
+    return 'fa fa-id-card-o';
   }
  
   /**
@@ -82,34 +82,34 @@ class Zendawesome extends Widget_Base {
     $this->start_controls_section(
       'section_content',
       [
-        'label' => __( 'Content', 'elementor-zendawesome' ),
+        'label' => __( 'Content', 'elementor-czelements' ),
       ]
     );
  
     $this->add_control(
       'title',
       [
-        'label' => __( 'Title', 'elementor-zendawesome' ),
+        'label' => __( 'Title', 'elementor-czelements' ),
         'type' => Controls_Manager::TEXT,
-        'default' => __( 'Title', 'elementor-zendawesome' ),
+        'default' => __( 'Title', 'elementor-czelements' ),
       ]
     );
  
     $this->add_control(
       'description',
       [
-        'label' => __( 'Description', 'elementor-zendawesome' ),
+        'label' => __( 'Description', 'elementor-czelements' ),
         'type' => Controls_Manager::TEXTAREA,
-        'default' => __( 'Description', 'elementor-zendawesome' ),
+        'default' => __( 'Description', 'elementor-czelements' ),
       ]
     );
  
     $this->add_control(
       'content',
       [
-        'label' => __( 'Content', 'elementor-zendawesome' ),
+        'label' => __( 'Content', 'elementor-czelements' ),
         'type' => Controls_Manager::WYSIWYG,
-        'default' => __( 'Content', 'elementor-zendawesome' ),
+        'default' => __( 'Content', 'elementor-czelements' ),
       ]
     );
  
@@ -119,7 +119,7 @@ class Zendawesome extends Widget_Base {
     $this->start_controls_section(
         'style_section',
         [
-          'label' => __( 'Style Section', 'elementor-zendawesome' ),
+          'label' => __( 'Style Section', 'elementor-czelements' ),
           'tab' => \Elementor\Controls_Manager::TAB_STYLE,
         ]
       );

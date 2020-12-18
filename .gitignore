@@ -2,17 +2,12 @@ vendor
 wp
 wp-config.php
 
-wp-content/*
-
-wp-content/themes/*
-!wp-content/themes/hello-elementor-child
-
 wp-content/plugins/*
-!wp-content/plugins/elementor-zendawesome
-!wp-content/plugins/cz-elements
+!wp-content/plugins/elementor-czelements
 
-wp-content/languages/*
-wp-content/upgrade/*
-wp-content/uploads/*
+wp-content/themes
+wp-content/languages
+wp-content/upgrade
+wp-content/uploads
 
 debug.log

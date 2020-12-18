@@ -1,21 +1,21 @@
 <?php
 /**
- * Plugin Name: Elementor Zendawesome
- * Description: A simple Elementor Zendawesome plugin that holds some most excellent custom widgets.
- * Plugin URI:  https://www.zendevs.xyz/comment-creer-son-widget-elementor-personnalise/
+ * Plugin Name: Elementor Czelements
+ * Description: Ajout de nouveaux widgets Elementor.
+ * Plugin URI:  https://github.com/Cha-Hyperion/test-widget-elementor-custom
  * Version:     1.0.0
- * Author:      Siddhy
- * Author URI:  https://www.zendevs.xyz
- * Text Domain: elementor-zendawesome
- * File :       elementor-zendawesome.php
+ * Author:      Charlene Zybala
+ * Author URI:  https://charlenezybala.com
+ * Text Domain: elementor-czelements
+ * File :       elementor-czelements.php
  */
  
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  
 /**
- * Main Elementor Zendawesome Class
+ * Main Elementor Czelements Class
  *
- * The init class that runs the Elementor Zendawesome plugin.
+ * The init class that runs the Elementor Czelements plugin.
  * Intended To make sure that the plugin's minimum requirements are met.
  *
  * You should only modify the constants to match your plugin's needs.
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Any custom code should go inside Plugin Class in the plugin.php file.
  * @since 1.0.0
  */
-final class Elementor_Zendawesome {
+final class Elementor_Czelements {
  
   /**
    * Plugin Version
@@ -39,7 +39,7 @@ final class Elementor_Zendawesome {
    * @since 1.0.0
    * @var string Minimum Elementor version required to run the plugin.
    */
-  const MINIMUM_ELEMENTOR_VERSION = '2.0.0';
+  const MINIMUM_ELEMENTOR_VERSION = '3.0.0';
  
   /**
    * Minimum PHP Version
@@ -74,7 +74,7 @@ final class Elementor_Zendawesome {
    * @access public
    */
   public function i18n() {
-    load_plugin_textdomain( 'elementor-zendawesome' );
+    load_plugin_textdomain( 'elementor-czelements' );
   }
  
   /**
@@ -129,9 +129,9 @@ final class Elementor_Zendawesome {
  
     $message = sprintf(
       /* translators: 1: Plugin name 2: Elementor */
-      esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-zendawesome' ),
-      '<strong>' . esc_html__( 'Elementor Zendawesome', 'elementor-zendawesome' ) . '</strong>',
-      '<strong>' . esc_html__( 'Elementor', 'elementor-zendawesome' ) . '</strong>'
+      esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-czelements' ),
+      '<strong>' . esc_html__( 'Elementor Czelements', 'elementor-czelements' ) . '</strong>',
+      '<strong>' . esc_html__( 'Elementor', 'elementor-czelements' ) . '</strong>'
     );
  
     printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -152,9 +152,9 @@ final class Elementor_Zendawesome {
  
     $message = sprintf(
       /* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-      esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-zendawesome' ),
-      '<strong>' . esc_html__( 'Elementor Zendawesome', 'elementor-zendawesome' ) . '</strong>',
-      '<strong>' . esc_html__( 'Elementor', 'elementor-zendawesome' ) . '</strong>',
+      esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-czelements' ),
+      '<strong>' . esc_html__( 'Elementor Czelements', 'elementor-czelements' ) . '</strong>',
+      '<strong>' . esc_html__( 'Elementor', 'elementor-czelements' ) . '</strong>',
       self::MINIMUM_ELEMENTOR_VERSION
     );
  
@@ -176,9 +176,9 @@ final class Elementor_Zendawesome {
  
     $message = sprintf(
       /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-      esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-zendawesome' ),
-      '<strong>' . esc_html__( 'Elementor Zendawesome', 'elementor-zendawesome' ) . '</strong>',
-      '<strong>' . esc_html__( 'PHP', 'elementor-zendawesome' ) . '</strong>',
+      esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-czelements' ),
+      '<strong>' . esc_html__( 'Elementor Czelements', 'elementor-czelements' ) . '</strong>',
+      '<strong>' . esc_html__( 'PHP', 'elementor-czelements' ) . '</strong>',
       self::MINIMUM_PHP_VERSION
     );
  
@@ -187,4 +187,4 @@ final class Elementor_Zendawesome {
 }
  
 // Instantiate Elementor_Zendawesome.
-new Elementor_Zendawesome();
+new Elementor_Czelements();
