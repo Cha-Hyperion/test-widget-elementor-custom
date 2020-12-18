@@ -1,3 +1,7 @@
 .try {
-    color: red;
+    color: blue;
+}
+.container {
+    border: solid 2px pink;
+    padding: 1rem;
 }

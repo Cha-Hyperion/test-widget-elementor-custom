@@ -9,5 +9,4 @@ wp-content/themes
 wp-content/languages
 wp-content/upgrade
 wp-content/uploads
-
-debug.log
+wp-content/debug.log

@@ -151,9 +151,11 @@ class Card extends Widget_Base {
         ]
         );
     ?>
-    <h2 class="try" <?php echo $this->get_render_attribute_string( 'title' ); ?>><?php echo $settings['title']; ?></h2>
-    <div <?php echo $this->get_render_attribute_string( 'description' ); ?>><?php echo $settings['description']; ?></div>
-    <div <?php echo $this->get_render_attribute_string( 'content' ); ?>><?php echo $settings['content']; ?></div>
+    <div class="container">
+      <h2 class="try" <?php echo $this->get_render_attribute_string( 'title' ); ?>><?php echo $settings['title']; ?></h2>
+      <div <?php echo $this->get_render_attribute_string( 'description' ); ?>><?php echo $settings['description']; ?></div>
+      <div <?php echo $this->get_render_attribute_string( 'content' ); ?>><?php echo $settings['content']; ?></div>
+    </div>
     <?php
   }
  
@@ -179,9 +181,11 @@ class Card extends Widget_Base {
         }
     );
     #>
-    <h2 {{{ view.getRenderAttributeString( 'title' ) }}}>{{{ settings.title }}}</h2>
-    <div {{{ view.getRenderAttributeString( 'description' ) }}}>{{{ settings.description }}}</div>
-    <div {{{ view.getRenderAttributeString( 'content' ) }}}>{{{ settings.content }}}</div>
+    <div class="container">
+      <h2 {{{ view.getRenderAttributeString( 'title' ) }}}>{{{ settings.title }}}</h2>
+      <div {{{ view.getRenderAttributeString( 'description' ) }}}>{{{ settings.description }}}</div>
+      <div {{{ view.getRenderAttributeString( 'content' ) }}}>{{{ settings.content }}}</div>
+    </div>
     <?php
   }
 }
